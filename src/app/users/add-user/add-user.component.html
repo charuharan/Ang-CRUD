@@ -1,1 +1,26 @@
-<p>add-user works!</p>
+<form [formGroup]="addUserForm" (submit)="createUser()">
+    <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input matInput placeholder="Placeholder" formControlName="username">
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Outline form field</mat-label>
+          <input matInput placeholder="Placeholder" formControlName="email">
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Outline form field</mat-label>
+            <input matInput placeholder="Placeholder" formControlName="phone">
+            <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+    </p>
+
+</form>
