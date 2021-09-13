@@ -15,4 +15,12 @@ export class UserService {
   viewuser(id: string){
     return this.http.get(this.baseurl + "users/" + id);
   }
+
+  addUser(userObj: any){
+    return this.http.post(this.baseurl + "users" , userObj)
+  }
+
+  deleteUser(id: any){
+    return this.http.delete(this.baseurl + "users/" + id);
+  }
 }
